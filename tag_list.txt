@@ -13,3 +13,11 @@
 비디오태그 - <video src="" controls loop autoplay>
 오디오태그 - <audio src="" controls loop autoplay>
 하이퍼링크 - <a href="이동할페이지경로" target="출력위치">
+테이블 태그 - <table>
+테이블 제목영역 - <thead>
+테이블 본문영역 - <tbody>
+테이블 꼬리말영역 - <tfoot>
+테이블 행 - <tr>
+테이블 셀 - <td rowspan="" colspan="">
+테이블 제목셀 - <th>
+
