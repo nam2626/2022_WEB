@@ -20,4 +20,8 @@
 테이블 행 - <tr>
 테이블 셀 - <td rowspan="" colspan="">
 테이블 제목셀 - <th>
-
+<caption></caption> 표 제목, 자동으로 가운데 정렬
+폼태그 <form></form>
+input 태그 <input type="text"> type에 따라 입력받는 형태가 달라짐
+    text, password, checkbox, submit
+label태그 <label for="아이디 속성값"></label>

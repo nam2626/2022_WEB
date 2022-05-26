@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그</title>
+</head>
+<body>
+    <form action="">
+        <!--
+            체크 박스, 라디오 버튼
+                checked : 미리 체크 해놓음
+        -->
+        <input type="checkbox" name="hobby" value="game" id="game" checked> 
+        <label for="game">게임</label>
+        <input type="checkbox" name="hobby" value="hiking" id="hiking"> 
+        <label for="hiking">등산</label>
+        <br>
+        <label for="id">아이디</label> <input type="text" id="id">
+        <br>
+        가입 약관 동의 여부 : <input type="radio" name="agree" value="yes" checked> 예
+        <input type="radio" name="agree" value="no"> 아니오
+        <br>
+        <input type="date"><br>
+        첨부파일 : <input type="file"><br>
+        색상 선택 : <input type="color" name="color"><br>
+        슬라이더 : <input type="range" value="100"><br>
+        수량 : <input type="number" step="3" max="30" min="0"><br>
+        <!--
+            select 에서 전송되는 값은 option의 value 속성
+            selected 이용해서 기본적으로 선택할 항목을 지정
+        -->
+        <select name="tel" id="">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016" selected>016</option>
+            <option value="017">017</option>
+            <option value="019">019</option>
+        </select><br>
+        <!--
+            input 태그의 텍스트 상자에서 쓰던 속성을 전부 사용이 가능
+            cols : 컬럼 개수, rows : 라인수
+            textarea 태그에서는 태그안에 내용을 넣으면
+            넣은 내용이 그대로 미리 입력되어 있음
+        -->
+        <textarea name="" id="" cols="30" rows="10">Hello World</textarea>
+        <button>제출</button>
+    </form>
+</body>
+</html>
