@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 예제</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding:20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h2>3행 4열짜리 테이블</h2>
+    <table border="1">
+        <tr><!--행-->
+            <td>1</td><!--열-->
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td><td>6</td><td>7</td><td>8</td>
+        </tr>
+        <tr>
+            <td>9</td><td>10</td><td>11</td><td>12</td>
+        </tr>
+    </table>
+    <h2>5행 5열짜리 테이블</h2>
+    <table border="1">
+        <tr>
+            <td colspan="2">1</td> <!--가로 2칸짜리 셀로 만듬-->
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">6</td> <!--세로 2칸짜리 셀로 만듬-->
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td colspan="2" rowspan="2">19</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+
+    </table>
+</body>
+</html>

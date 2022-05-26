@@ -9,3 +9,7 @@
 목록태그 - 순번 있는 것 <ol>
 목록태그 - 순번 없는 것 <ul>
 목록태그 항목 태그 - <li>
+이미지태그 - <img src="경로" alt="대체텍스트">
+비디오태그 - <video src="" controls loop autoplay>
+오디오태그 - <audio src="" controls loop autoplay>
+하이퍼링크 - <a href="이동할페이지경로" target="출력위치">
