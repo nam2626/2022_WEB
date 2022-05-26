@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨</title>
+    <style>
+         table{
+            border-collapse: collapse;
+        }
+        td, th{ 
+            padding:5px;
+            border : 1px solid black;
+        }
+        img{
+            width: 32px;
+        }
+    </style>    
+</head>
+<body>
+    <h2>날씨 예보</h2>
+    <table>
+        <caption>지역 날씨 예보</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">지역</th>
+                <th colspan="2">27일(목)</th>
+                <th colspan="2">28일(금)</th>
+                <th colspan="2">29일(토)</th>
+            </tr>
+            <tr>
+                <td>오전</td>
+                <td>오후</td>
+                <td>오전</td>
+                <td>오후</td>
+                <td>오전</td>
+                <td>오후</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>서울<br>경기도</td>
+                <td><img src="img/cloud_sun.png" alt="맑은 후 흐림"></td>
+                <td><img src="img/cloud_sun.png" alt="맑은 후 흐림"></td>
+                <td><img src="img/cloud_sun.png" alt="맑은 후 흐림"></td>
+                <td><img src="img/rain.png" alt="비"></td>
+                <td><img src="img/rain.png" alt="비"></td>
+                <td><img src="img/rain.png" alt="비"></td>
+            </tr>
+            <tr>
+                <td>제주도</td>
+                <td><img src="img/cloud_sun.png" alt="맑은 후 흐림"></td>
+                <td><img src="img/cloud_sun.png" alt="맑은 후 흐림"></td>
+                <td><img src="img/cloud_sun.png" alt="맑은 후 흐림"></td>
+                <td><img src="img/rain.png" alt="비"></td>
+                <td><img src="img/rain.png" alt="비"></td>
+                <td><img src="img/rain.png" alt="비"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
