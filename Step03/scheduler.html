@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th{ 
+            padding:5px;
+            border : 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>OO회사 야유회 일정</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>일정</th>
+                <th>일정내용</th>
+                <th>장소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">2021-03-19</td>
+                <td>야유회 출발</td>
+                <td>회사앞</td>
+            </tr>
+            <tr>
+                <td>숙소 도착</td>
+                <td rowspan="3">OO콘도<br>O강당</td>
+            </tr>
+            <tr>
+                <td>레크레이션 진행</td>
+            </tr>
+            <tr>
+                <td>다과회</td>
+            </tr>
+            <tr>
+                <td rowspan="3">2021-03-20</td>
+                <td>등산</td>
+                <td rowspan="2">마니산</td>
+            </tr>
+            <tr>
+                <td>점심식사</td>
+            </tr>
+            <tr>
+                <td>저녁식사</td>
+                <td>각 숙소</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2021-03-21</td>
+                <td>회사출발</td>
+                <td>OO콘도</td>
+            </tr>
+            <tr>
+                <td>퇴근</td>
+                <td>회사앞</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
