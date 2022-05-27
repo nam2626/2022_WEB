@@ -1,0 +1,10 @@
+CSS(Cascaing Style Sheets)
+    html 문서에서 디자인 부분을 담당하는 코드
+    
+    선택자(selector) : 디자인을 적용할 태그를 선택하는 방법
+
+    폰트 - 크기, 글꼴, bold, italic, underline, 색상
+    박스모델링 - 배경, 테두리, 여백(margin, padding), 그림자
+    레이아웃 - 박스모델링, 가로세로, display, float, 좌표, position
+              grid, flex
+    애니메이션
