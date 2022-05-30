@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공백 처리</title>
+    <style>
+        p{
+            width:200px;
+            border:1px solid black;
+            white-space: break-spaces;
+            /* 
+                pre-line : 연속 공백 X, 엔터와 <br>로 줄바꿈, 가로 길이에 따라 줄바꿈 O
+                pre : 연속 공백 O, 엔터와 <br>로 줄바꿈, 가로 길이에 따라 줄바꿈 X
+                pre-wrap : 연속 공백 O, 엔터와 <br>로 줄바꿈, 가로 길이에 따라 줄바꿈 O
+                break-spaces : pre-wrap과 동일하지만, 연속 공백이 줄 끝이상이 되면 줄바꿈
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <p>국가유공자·상이군경 및 전몰군경의                                     유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다. 
+        국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 
+        국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다. 
+        헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 
+        이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다. 행정권은 대통령을 수반으로 하는 정부에 속한다. 국가안전보장회의는 대통령이 주재한다. 국회는 법률에 저촉되지 아니하는 범위안에서 의사와 내부규율에 관한 규칙을 제정할 수 있다.</p>
+</body>
+</html>

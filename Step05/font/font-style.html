@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴 꾸미기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <style>
+        /* 
+            폰트 색상
+            rgb(0~255,0~255,0~255)
+            html 색상표 --> #FF0000
+        */
+        .color{
+            color:#ff0000;
+        }
+        /* 기울임꼴 : italic */
+        .italic{font-style: italic;}
+        /* 텍스트 라인 긋기 : underline overline line-through, none 
+           기본 선 색깔은 글꼴 색깔
+           선 색상 바꿀려면 text-decoration-color
+        */
+        a{
+            text-decoration: none;
+        }
+        /* 
+            글꼴 두껍게
+        */
+        .bold{
+            font-weight: bold;
+        }
+        /* 폰트 : 첫번째 메인폰트, 서브 폰트(사용자 컴퓨터에 메인폰트가 없을때)*/
+        .font{
+            /* font-family: '궁서1', '바탕'; */
+            font-family: 'Hi Melody', cursive;
+        }
+        @font-face {
+            font-family: '독도';
+            src: url('/Step05/font/resource/Dokdo-Regular.ttf');
+        }
+        .new_font{
+            font-family: '독도';
+        }
+    </style>
+</head>
+<body>
+    <a href="#">하이퍼링크</a>
+    <p class="line">근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다.</p>
+    <p class="bold">모든 국민은 <span class="italic">법률</span>이 정하는 바에 의하여 국방의 의무를 진다.</p>
+    <p class="font">대법원은 법률에 저촉되지 아니하는 범위안에서 소송에 관한 절차, 법원의 내부규율과 사무처리에 관한 규칙을 제정할 수 있다.</p>
+    <p class="new_font">대한민국은 민주공화국이다. 대통령은 필요하다고 인정할 때에는 외교·국방·통일 기타 국가안위에 관한 중요정책을 국민투표에 붙일 수 있다.</p>
+    <p>공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.</p>
+</body>
+</html>
