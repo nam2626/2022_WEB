@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+            border: 20px dashed black;
+            background-color: burlywood;
+            background-clip: padding-box;
+        }
+        .clip_text{
+            background-image: url(img/tree.jpg);
+            font-size: 32px;
+            font-weight: bold;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:transparent;
+        }
+    </style>
+</head>
+<body>
+     <!--가로 세로 400px, padding : 50px, border 20px box 하나 작업-->
+     <div></div>
+     <hr>
+     <div class="clip_text">
+         글자 투명화 테스트
+     </div>
+</body>
+</html>
