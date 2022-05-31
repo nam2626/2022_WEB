@@ -1,6 +1,6 @@
 {
     "html.autoCreateQuotes": true,
-    "html.format.enable": false,
+    "html.format.enable": true,
     "html.format.endWithNewline": false,
     "workbench.colorTheme": "Default Light+",
     "editor.fontSize": 24
