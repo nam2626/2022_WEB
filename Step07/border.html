@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테두리</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* border : 선두께 선종류 색상;  상하좌우 동일한 디자인 */
+        /* 
+            선종류 : solid dashed dotted double inset outset
+        */
+        .border1 {
+            /* border: 20px outset coral; */
+            border-width: 20px;
+            border-style: outset;
+            border-color: coral;
+        }
+
+        .border2 {
+            /* border-bottom: 5px solid yellowgreen; */
+            border-bottom-width: 5px;
+            border-bottom-style: dashed;
+            border-bottom-color: blueviolet;
+        }
+
+        .border3 {
+            border: 5px solid coral;
+            border-radius: 20px;
+        }
+
+        .border4 {
+            width: 300px;
+            height: 50px;
+            border: 1px solid coral;
+            border-radius: 25px;
+        }
+
+        .border5 {
+            width: 300px;
+            height: 300px;
+            border: 1px solid coral;
+            border-radius: 150px;
+            box-shadow: 0px 0px 30px red inset;
+        }
+
+        .border6 {
+            width: 300px;
+            height: 300px;
+            border: 1px solid cornflowerblue;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border1"></div>
+    <hr>
+    <div class="border2"></div>
+    <hr>
+    <div class="border3"></div>
+    <hr>
+    <div class="border4"></div>
+    <hr>
+    <div class="border5"></div>
+    <hr>
+    <div class="border6"></div>
+</body>
+
+</html>
