@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        /* 상하좌우 동일 */
+        .box1{
+            margin: 30px;
+        }
+        /* (상하) (좌우) */
+        .box2{
+            margin:20px 30px;
+        }
+        /* 상  (좌우)  하*/
+        .box3{
+            margin:10px 20px 30px;
+        }
+        /* 상 우 하 좌 */
+        .box4{
+            margin : 10px 20px 30px 40px;
+        }
+        .box5{
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>    
+    <hr>
+    <div class="box2"></div>    
+    <hr>
+    <div class="box3"></div>    
+    <hr>
+    <div class="box4"></div>    
+    <hr>
+    <div class="box5">박스 가운데 정렬
+        <div class="sub"></div>
+    </div>    
+    <hr>
+    <p>block <span>태그</span> 영역</p>
+</body>
+</html>
