@@ -54,7 +54,7 @@
         li{
             display: inline-block;
         }
-        a:link,a:visited{
+        nav a:link,nav a:visited{
             color:black;
             font-weight: bold;
             display: inline-block;
@@ -63,10 +63,10 @@
             font-size: 20px;
             text-decoration: none;
         }
-        a:hover{
+        nav a:hover{
             background-color: rgb(138, 138, 172);
         }
-        a:active{
+        nav a:active{
             background: none;
         }
         .container{
@@ -80,6 +80,8 @@
             border : 1px solid black;
             box-sizing: border-box;
             float: left;
+            text-align: center;
+            padding-top: 20px;
         }
         section{
             width: 900px;
@@ -87,6 +89,13 @@
             border : 1px solid black;
             box-sizing: border-box;
             float: left;
+        }
+        .banner_long{
+            width: 130px;
+            height: 300px;
+        }
+        .banner_short{
+            width: 130px;
         }
     </style>
 </head>
@@ -108,9 +117,15 @@
         </ul>
     </nav>
     <div class="container">
-        <aside></aside>        
+        <aside><a href="#"><img src="img/tree.jpg" alt="광고영역" class="banner_long"></a></aside>        
         <section></section>
-        <aside></aside>        
+        <aside>
+            <a href="#"><img src="img/tree.jpg" alt="광고영역" class="banner_short"></a>
+            <a href="#"><img src="img/tree.jpg" alt="광고영역" class="banner_short"></a>
+            <a href="#"><img src="img/tree.jpg" alt="광고영역" class="banner_short"></a>
+            <a href="#"><img src="img/tree.jpg" alt="광고영역" class="banner_short"></a>
+
+        </aside>        
     </div>
 </body>
 </html>
