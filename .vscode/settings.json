@@ -2,7 +2,7 @@
     "html.autoCreateQuotes": true,
     "html.format.enable": false,
     "html.format.endWithNewline": false,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Light+",
     "editor.fontSize": 24,
     "workbench.iconTheme": "vs-seti"
 }
