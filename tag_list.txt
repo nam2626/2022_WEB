@@ -25,3 +25,14 @@
 input 태그 <input type="text"> type에 따라 입력받는 형태가 달라짐
     text, password, checkbox, submit
 label태그 <label for="아이디 속성값"></label>
+시멘틱(semantic) 태그
+    태그 요소를 브라우저와 개발자에게 정확게 어떤 콘텐츠 요소인지 설명
+
+    <header> : 머리글 영역
+    <nav> : 메뉴 링크, 링크 모음
+    <section> : 본문 영역
+    <article> : 본문 내용 영역
+    <aside> : 본문 외적인 내용, 배너, 광고링크
+    <footer> : 꼬리말 영역, 카피라이트, 회사정보, 신고번호, 이용약관, 개인정보취급방침...
+    <figure> : 사진 목록등의 콘텐츠 --> 썸네일 이미지 목록
+    <figcaption> : figure 태그의 캡션
