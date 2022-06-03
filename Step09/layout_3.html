@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        header{
+            width: 1200px;
+            height: 200px;
+            margin:0 auto;
+            border:1px solid black;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 1200px;
+            margin:0 auto;
+            border:1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        li{
+            float: left;
+        }
+        a{
+            width: 150px;
+            display: inline-block;
+            padding: 20px 0px;
+        }
+        .container{
+            width: 1200px;
+            margin:0 auto;
+        }
+        section{
+            width: 1200px;
+            height: 500px;
+            border:1px solid black;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        article{
+            /* width: 33.3333%; */
+            width: 500px;
+            height: 300px;
+            border:1px solid black;
+            box-sizing: border-box;
+            margin-left: calc((100% - 1000px) / 3);
+            float: left;
+        }
+        aside{
+            width: 300px;
+            height: 700px;
+            border:1px solid black;
+            float: left;
+            box-sizing: border-box;
+        }
+        footer{
+            width: 1200px;
+            margin:0 auto;
+            padding:30px 0px;
+            border:1px solid black;
+            box-sizing: border-box;
+            clear: both;
+        }
+        .logo, .company{
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+        }
+        .logo{
+            float: left;
+        } 
+        .company{
+            float: right;
+        }
+        .footer_container{
+            width: 100%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>header 제목 영역</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+        </ul>
+    </nav>
+    <section>
+            <h2>section 제목 영역</h2>
+            <article>
+                <h3>article 제목영역</h3>
+                <p>article 내용</p>
+            </article>
+            <article>
+                <h3>article 제목영역</h3>
+                <p>article 내용</p>
+            </article>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="logo">로고</div>
+            <div class="company">회사정보</div>
+        </div>
+    </footer>
+</body>
+</html>
