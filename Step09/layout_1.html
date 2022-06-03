@@ -71,13 +71,11 @@
         }
         .container{
             width: 1200px;
-            border:1px solid black;
             margin: 0 auto;
         }
         aside{
             width: 150px;
             height: 400px;
-            border : 1px solid black;
             box-sizing: border-box;
             float: left;
             text-align: center;
@@ -86,9 +84,12 @@
         section{
             width: 900px;
             height: 400px;
-            border : 1px solid black;
             box-sizing: border-box;
             float: left;
+            padding-left: 10px;
+        }
+        article{
+            margin-top: 10px;
         }
         .banner_long{
             width: 130px;
@@ -96,6 +97,18 @@
         }
         .banner_short{
             width: 130px;
+        }
+        .thumnail_bar{
+            margin-top: 10px;
+            padding-left: 50px;
+        }
+        figure{
+            width: 150px;
+            float: left;
+            margin-right: 10px;
+        }
+        figure img{
+            width: 100%;
         }
     </style>
 </head>
@@ -118,7 +131,58 @@
     </nav>
     <div class="container">
         <aside><a href="#"><img src="img/tree.jpg" alt="광고영역" class="banner_long"></a></aside>        
-        <section></section>
+        <section>
+            <article>
+                <h2>article 제목</h2>
+                <div class="thumnail_bar">
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                </div>
+            </article>
+            <article>
+                <h2>article 제목</h2>
+                <div class="thumnail_bar">
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                    <figure>
+                        <img src="img/tree.jpg">
+                        <p>내용</p>
+                    </figure>
+                </div>
+            </article>
+        </section>
         <aside>
             <a href="#"><img src="img/tree.jpg" alt="광고영역" class="banner_short"></a>
             <a href="#"><img src="img/tree.jpg" alt="광고영역" class="banner_short"></a>
