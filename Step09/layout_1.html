@@ -42,6 +42,33 @@
             width: 100%;
             display: inline-block;
         }
+        nav{
+            width:1200px;
+            background-color: lavender;
+            margin: 0 auto;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+        }
+        a:link,a:visited{
+            color:black;
+            font-weight: bold;
+            display: inline-block;
+            width: 200px;
+            padding: 10px 0px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: rgb(138, 138, 172);
+        }
+        a:active{
+            background: none;
+        }
     </style>
 </head>
 <body>
@@ -52,5 +79,14 @@
             <input class="txt_search" type="text" placeholder="검색어를 입력하세요">
         </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+            <li><a href="#">메뉴5</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
