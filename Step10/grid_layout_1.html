@@ -47,6 +47,41 @@
             padding:20px 0px;
             box-sizing: border-box;
         }
+        section{
+            border: 1px solid black;
+            grid-area: section;
+        }
+        .section_grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        article{
+            height: 300px;
+            border:1px solid black;
+        }
+        aside{
+            border: 1px solid black;
+            grid-area: aside;
+        }
+        footer{
+            border: 1px solid black;
+            grid-area: footer;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas: 
+            "logo . . . . company company";
+            padding:20px 0px;
+        }
+        .logo{
+            border: 1px solid black;
+            height: 100px;
+            grid-area: logo;
+        }
+        .company{
+            border: 1px solid black;
+            height: 100px;
+            grid-area: company;
+        }
     </style>
 </head>
 <body>
