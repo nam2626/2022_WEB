@@ -57,9 +57,11 @@
         /* 선택된 상태 */
         a:focus{
             font-style: italic;
+            outline: none;
         }
         input:focus{
             background-color: lightblue;
+            outline: none;
         }
         /* 비활성화 된 상태 */
         input:disabled{
@@ -106,6 +108,24 @@
             background-color: yellow;
             color: crimson;
         }
+        /* 
+            placeholder css
+         */
+         input::placeholder{
+             color: blueviolet;
+             font-weight: bold;
+         }
+         /* 선택한 요소의 마지막에 내용을 추가하는 CSS */
+         .after li::after{
+             content: "← 다음 줄로";
+             color:cornflowerblue;
+             text-decoration: underline;
+         }
+        /* 선택한 요소의 맨앞에 내용을 추가하는 CSS */
+         .after li::before{
+             content: "시작 내용 : ";
+             color:tomato;
+         }
     </style>
 </head>
 <body>
