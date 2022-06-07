@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼</title>
+    <style>
+        input{
+            width: 0px;
+        }
+        label{
+            background-image: url('img/radio_none_check.png');
+            background-repeat: no-repeat;
+            background-size: 16px;
+            background-position: left center;
+            padding-left: 20px;
+        }
+        input:checked+label{
+            background-image: url('img/radio_check.png');
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="n" id="n1"><label for="n1">예</label><br>
+    <input type="radio" name="n" id="n2" checked><label for="n2">아니오</label>
+</body>
+</html>
