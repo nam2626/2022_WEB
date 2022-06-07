@@ -75,6 +75,36 @@
         input:required:invalid{
             border:2px solid red;
         }
+        /* 체크 박스(라디오 버튼)가 체크된 상태 */
+        #chk:checked + label{
+            background-color: dodgerblue;
+            color: brown;
+        }
+        /* 첫번째 요소 */
+        .container1 > p:first-child{
+           color : red; 
+        }
+        /* 마지막 요소 */
+        .container1 > p:last-child{
+           color : blue; 
+        }
+        /* 원하는 n번째 요소 선택 */
+        .container1 > p:nth-child(3){
+           color : cadetblue; 
+        }
+        .container1 > p:nth-child(2n){
+            background-color: gold;
+        }
+        .container1 > p:nth-child(2n+1){
+            background-color: darksalmon;
+        }
+        /* 
+            드래그 했을때 강조 되는 요소에 사용, 
+                color, background-color, text-decoration, text-shadow
+        */
+        p::selection{
+
+        }
     </style>
 </head>
 <body>
