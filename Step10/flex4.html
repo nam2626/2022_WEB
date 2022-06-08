@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+         *{
+            margin: 0;
+            padding:0;
+        }
+        .flex_container{
+            width: 1200px;
+            border: 1px solid black;
+            padding:10px;
+        }
+        .flex_container div{
+            border: 1px solid blue;
+            padding:10px;
+        }
+        .box{
+            margin: 5px;
+            min-width: 70px;
+            background-color: darkblue;
+            color: white;
+        }
+        .flex_row{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            box-sizing: border-box;
+        }
+        .align1{
+            /* 교차축 기준으로 시작점에 배치 */
+            align-items: flex-start;
+        }
+        .align2{
+            /* 교차축 기준으로 끝점에 배치 */
+            align-items: flex-end;
+        }
+        .align3{
+            /* 교차축 기준으로 중간에 배치 */
+            align-items: center;
+        }
+        .align4{
+            /* 항목을 늘려서 교차축에 가득차게 배치 */
+            align-items: stretch;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="flex_row align1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_row align2">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_row align3">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="flex_row align4">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+
+    </div>
+</body>
+</html>
