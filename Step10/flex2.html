@@ -11,71 +11,61 @@
             padding:0;
         }
         .flex_container{
-            width:1200px;
+            width: 1200px;
             border:1px solid black;
             padding:10px;
         }
+        .flex_container div{
+            border:1px solid blue;
+            padding:10px;
+        }
         .box{
-            margin:5px;
-            width: 100px;
+            margin: 5px;
+            width: 300px;
             background-color: cadetblue;
             color: white;
+            text-align: center;
         }
-        .flex_container div{
-            padding:10px;
-            border:1px solid red;
-        }
-        .flex_row{
+        .flex_row_1{
             display: flex;
             flex-direction: row;
-        }
-        .flex_row_reverse{
-            display: flex;
-            flex-direction: row-reverse;
-        }
-        .flex_colum{
-            display: flex;
-            flex-direction: column;
-            width: 400px;
-            height: 500px;
-        }
-        .flex_colum_reverse{
-            display: flex;
-            flex-direction: column-reverse;
-            width: 400px;
-            height: 500px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
 <body>
     <div class="flex_container">
-        <div class="flex_row">
+        <div class="flex_row_1">
             <div class="box">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
             <div class="box">4</div>
             <div class="box">5</div>
+            <div class="box">6</div>
         </div>
-        <div class="flex_row_reverse">
+        <div class="flex_row_2">
             <div class="box">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
             <div class="box">4</div>
             <div class="box">5</div>
+            <div class="box">6</div>
         </div>
-        <div class="flex_colum">
+        <div class="flex_row_3">
             <div class="box">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
             <div class="box">4</div>
             <div class="box">5</div>
+            <div class="box">6</div>
         </div>
-        <div class="flex_colum_reverse">
+        <div class="flex_row_4">
             <div class="box">1</div>
             <div class="box">2</div>
             <div class="box">3</div>
             <div class="box">4</div>
             <div class="box">5</div>
+            <div class="box">6</div>
         </div>
     </div>
 </body>
