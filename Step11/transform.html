@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div{
+            width:200px;
+            height: 200px;
+            background-color: gray;
+            border:1px solid black;
+            background-image: url(img/waterfalls.jpg);
+            background-size: 100% 100%;
+        }
+        div.t1{
+            transform: translate(100px,100px);
+        }
+        div.t2{
+            transform: translate(200px, 0px) rotateX(130deg);
+        }
+        div.t3{
+            transform: translate(200px,0px) rotateY(40deg);
+        }
+        div.t4{
+            transform: translate(200px,0px) rotateZ(40deg)
+        }
+    </style>
+</head>
+<body>
+    <div class="t1"></div>    
+    <div class="t2"></div>    
+    <div class="t3"></div>    
+    <div class="t4"></div>    
+</body>
+</html>
