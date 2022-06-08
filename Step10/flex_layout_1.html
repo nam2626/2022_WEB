@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .flex_container{
+            width: 1200px;
+            margin:0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border:1px solid black;
+            padding:20px 5px;
+        }
+        nav{
+            border:1px solid black;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            justify-content: center;
+        }
+        a{
+            display: inline-block;
+            width: 200px;
+            padding:20px 0px;
+            text-align: center;
+            text-decoration: none;
+            color:black;
+        }
+        .main_container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border:1px solid black;
+        }
+        section{
+            width: 900px;
+            border:1px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        aside{
+            width: 300px;
+            border:1px solid black;
+        }
+        h2{
+            width: 100%;
+            padding:20px;
+        }
+        article{
+            width: calc(100% / 3);
+            height: 300px;
+            border:1px solid black;
+            box-sizing: border-box;
+        }
+        footer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            border:1px solid black;
+            padding: 40px 0px;
+        }
+        .logo{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+        }
+        .company{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <header>
+            <h1>헤더영역</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+        </nav>
+        <div class="main_container">
+        <section>
+            <h2>섹션 제목 영역</h2>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+                <article>
+                    <h3>article 제목</h3>
+                    <p>내용</p>
+                </article>
+        </section>
+        <aside>
+            <h2>aside 제목</h2>
+        </aside>
+        </div>
+        <footer>
+            <div class="logo"></div>
+            <div class="company"></div>
+        </footer>
+    </div>
+</body>
+</html>
