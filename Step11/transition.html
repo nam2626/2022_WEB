@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            border:5px solid black;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .box1:hover{
+            background-color: coral;
+            border:5px dashed red;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            border:5px solid black;
+            box-sizing: border-box;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .box2:hover{
+            border-radius: 100px;
+            background-color: coral;
+            border:5px dashed red;
+        }
+        button{
+            position: absolute;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        button:hover{
+            margin-top:150px;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>    
+    <div class="box2"></div>
+    <button>회원탈퇴</button>
+</body>
+</html>
