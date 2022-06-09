@@ -34,6 +34,24 @@
             margin-top: 2px;
             padding-left: 10px;
         }
+        .ad_img{
+            position: absolute;
+        }
+        .ad_img button{
+            background: none;
+            border:none;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255,255,255,0.5);
+            top:calc(50% - 25px);
+        }
+        .ad_img button img{
+            width: 50px;
+        }
+        .right_arrow{
+            right: 0px;
+        }
     </style>
 </head>
 <body>
@@ -45,7 +63,11 @@
                     <p>OOO 로그인 하셨습니다</p>
                     <p>로그아웃 | 정보수정</p>
                 </div>
-
+            </div>
+            <div class="ad_img">
+                <button class="left_arrow"><img src="img/left_arrow.png" alt=""></button>
+                <button class="right_arrow"><img src="img/right_arrow.png" alt=""></button>
+                <img src="img/main_4.jpg" alt="">
             </div>
         </header>
     </div>
