@@ -35,7 +35,8 @@
             padding-left: 10px;
         }
         .ad_img{
-            position: absolute;
+            position: relative;
+            font-size: 0px;
         }
         .ad_img button{
             background: none;
@@ -51,6 +52,28 @@
         }
         .right_arrow{
             right: 0px;
+        }
+        nav{
+            background-color: #e9e9e9;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        nav a:link, nav a:visited{
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color:black;
+            width: 200px;
+            padding: 20px 0px;
+            text-align: center;
+            display: inline-block;  
+        }
+        nav a:hover{
+            background-color: #b0b0b0;
         }
     </style>
 </head>
@@ -70,6 +93,15 @@
                 <img src="img/main_4.jpg" alt="">
             </div>
         </header>
+        <nav>
+            <ul>
+                <li><a href="main.html">HOME</a></li>
+                <li><a href=sub_page2.html">예약</a></li>
+                <li><a href="#">펜션 스토리</a></li>
+                <li><a href="#">펜션 소개</a></li>
+                <li><a href="sub_page1.html">오시는 길</a></li>
+            </ul>
+        </nav>
     </div>
 </body>
 </html>
