@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex_container{
+            display: flex;
+            flex-direction: column;
+            width: 1200px;
+            margin:0 auto;
+        }
+        #member_bar{
+            background-color: #e9e9e9;
+            text-align: right;
+        }
+        #member_bar > div{
+            width: 300px;
+            display: inline-block;
+        }
+        #member_bar img{
+            width: 50px;
+            float: left;
+        }
+        #member_bar p{
+            float: left;
+            text-align: left;
+            margin-top: 2px;
+            padding-left: 10px;
+        }
+        .ad_img{
+            position: relative;
+            font-size: 0px;
+        }
+        .ad_img button{
+            background: none;
+            border:none;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255,255,255,0.5);
+            top:calc(50% - 25px);
+        }
+        .ad_img button img{
+            width: 50px;
+        }
+        .right_arrow{
+            right: 0px;
+        }
+        nav{
+            background-color: #e9e9e9;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        nav a:link, nav a:visited{
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color:black;
+            width: 200px;
+            padding: 20px 0px;
+            text-align: center;
+            display: inline-block;  
+        }
+        nav a:hover{
+            background-color: #b0b0b0;
+        }
+        section{
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 0px 30px;
+        }
+        article img{
+            width: 70%;
+        }
+        article div{
+            margin-left: 20px;
+        }
+        
+        footer{
+            background-color: #e9e9e9;
+            padding:20px; 
+        }
+        footer ul{
+            list-style-type: none;
+        }
+        footer ul li{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <header>
+            <div id="member_bar">
+                <div>
+                    <img src="img/profile.png" alt="">
+                    <p>OOO 로그인 하셨습니다</p>
+                    <p>로그아웃 | 정보수정</p>
+                </div>
+            </div>
+            <div class="ad_img">
+                <button class="left_arrow"><img src="img/left_arrow.png" alt=""></button>
+                <button class="right_arrow"><img src="img/right_arrow.png" alt=""></button>
+                <img src="img/main_4.jpg" alt="">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="main.html">HOME</a></li>
+                <li><a href=sub_page2.html">예약</a></li>
+                <li><a href="#">펜션 스토리</a></li>
+                <li><a href="#">펜션 소개</a></li>
+                <li><a href="sub_page1.html">오시는 길</a></li>
+            </ul>
+        </nav>
+        <section>
+           <article>
+               <img src="img/map.png" alt="">
+               <div>
+                   <h2>오시는길</h2>
+                   <p>모든 국민은 직업선택의 자유를 가진다. 대법관의 임기는 6년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다.</p>
+                    <p>모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한 압수나 수색을 할 때에는 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 군인은 현역을 면한 후가 아니면 국무위원으로 임명될 수 없다.</p>
+               </div>
+           </article>
+        </section>
+        <footer>
+            <ul>
+                <li>OOOO 펜션</li>
+                <li>대표자 : OOO</li>
+                <li>연락처 : 010-0000-0000</li>
+                <li>주소 : 강원도 평창시 OOOOOOO</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
