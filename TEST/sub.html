@@ -10,11 +10,122 @@
             margin: 0;
             padding:0;
         }
+        header{
+            width: 1200px;
+            margin:0 auto;
+        }
+        header img{
+            width: 100%;
+        }
+        .main_menu{
+            min-width: 1200px;
+            margin:0 auto;
+            border-bottom:1px solid gray;
+        }
+        ul{
+            width: 1200px;
+            margin:0 auto;
+            list-style-type:none ;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .main_menu li{
+            width: 200px;
+        }
+        .main_menu a:link,.main_menu a:visited{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0px;
+            font-weight: bold;
+            color:black;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        section{
+            width: 1200px;
+            margin:0 auto;
+        }
+        article{
+            width: 800px;
+            padding-top: 30px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        article label{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        article table{
+            margin: 20px auto;
+        }
+        .txt{
+            width:300px;
+            height: 40px;
+            border:1px solid black;
+            border-radius: 10px;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: bold;  
+        }
+        #tel1{
+            width: 80px;
+            height: 40px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        #tel1~input{
+            width: 100px;
+            height: 40px;
+            font-size: 16px;
+        }
+        #host{
+            width: 150px;
+            height: 40px;
+            font-size: 16px;
+        }
+        td{
+            padding: 5px 0px;
+        }
+        td:first-child{
+            text-align: right;
+        }
+        td:last-child{
+            text-align: left;
+            padding-left: 20px;
+        }
+        td:last-child label{
+            font-weight: normal;
+        }
+        select{
+            border-radius: 10px;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: #6161be;
+            color: white;
+            border: none;
+            margin-right: 10px;
+        }
+        .table_footer{
+            text-align: center !important;
+        }
+        footer{
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #e9e9e9;
+            padding: 20px 100px;
+        }
     </style>
 </head>
 <body>
-    <header></header>
-    <nav>
+    <header>
+        <img src="img/main_ad.png" alt="광고이미지">
+    </header>
+    <nav class="main_menu">
         <ul>
             <li><a href="#" title="메인페이지로 이동">홈</a></li>
             <li><a href="#" title="제품소개페이지로 이동">제품소개</a></li>
@@ -24,35 +135,35 @@
     </nav>
     <section>
         <article>
-            <h2>가맹점 신청 페이지</h2>\
+            <h2>가맹점 신청 페이지</h2>
             <form action="">
                 <table>
                     <tr>
                         <td><label for="writer">신청자</label></td>
-                        <td><input type="text" id="writer" name="writer"></td>
+                        <td><input type="text" id="writer" name="writer" class="txt"></td>
                     </tr>
                     <tr>
                         <td><label for="address">주소</label></td>
-                        <td><input type="text" id="address" name="address"></td>
+                        <td><input type="text" id="address" name="address" class="txt"></td>
                     </tr>
                     <tr>
-                        <td>연락처</td>
+                        <td class="title">연락처</td>
                         <td>
-                            <select name="tel1">
+                            <select name="tel1" id="tel1">
                                 <option value="010">010</option>
                                 <option value="010">011</option>
                                 <option value="016">016</option>
                                 <option value="019">019</option>
                             </select>
-                            <input type="text" name="tel2">
-                            <input type="text" name="tel3">
+                            <input type="text" name="tel2" id="tel2" class="txt">
+                            <input type="text" name="tel3" id="tel3"class="txt">
                         </td>
                     </tr>
                     <tr>
                         <td><label for="email">이메일</label></td>
                         <td>
-                            <input type="text" name="email" id="email">@
-                            <select name="host">
+                            <input type="text" name="email" id="email" class="txt">@
+                            <select name="host" id="host">
                                 <option value="0">gmail.com</option>
                                 <option value="1">naver.com</option>
                                 <option value="2">hanmail.net</option>
@@ -61,14 +172,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>메일링 서비스 동의</td>
+                        <td class="title">메일링 서비스 동의</td>
                         <td>
                             <input type="checkbox" name="magree" id="agree">
                             <label for="magree">가입</label>
                         </td>
                     </tr>
                     <tr>
-                        <td>개인정보 수집 동의</td>
+                        <td class="title">개인정보 수집 동의</td>
                         <td>
                             <input type="radio" name="eagree" id="yagree">
                             <label for="yagree">동의</label>
@@ -77,7 +188,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" class="table_footer">
                             <button>문의하기</button>
                             <button type="reset">초기화</button>
                             <button type="button">취소</button>
@@ -87,5 +198,10 @@
             </form>
         </article>
     </section>
+    <footer>
+        <p>회사정보 : OOOOOOOOOOO</p>
+        <p>대표 : OOOOOOOOOOO</p>
+        <p>연락처 : OOOOOOOOOOO</p>
+    </footer>
 </body>
 </html>
