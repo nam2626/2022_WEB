@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평가</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;    
+        }
+        html, body{
+            height: 100%;
+        }
+        .left_menu{
+            width: 60px;
+            height: 100%;
+            background-color: #e9e9e9;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        .left_menu li{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .left_menu img{
+            width: 40px;
+        }
+        header{
+            width: calc(100%-60px);
+            min-width: 1200px;
+            margin-left: 60px;
+            
+        }
+        header img{
+            width: 100%;
+        }
+        .main_menu{
+            width: calc(100%-60px);
+            min-width: 1200px;
+            margin-left: 60px;
+            border-bottom: 1px solid gray;
+            text-align: center;
+        }
+        .main_menu ul{
+            display: inline-block;
+            list-style-type: none ;
+        }
+        .main_menu li{
+            width: 200px;
+            float: left;
+        }
+        .main_menu li a:link,
+        .main_menu li a:visited{
+            font-size: 24px;
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+            line-height: 24px;
+            padding:20px 0px;
+            width: 100%;
+            display: inline-block;
+        }
+        section{
+            width: calc(100%-60px);
+            min-width: 1200px;
+            margin-left: 60px;
+        }
+        article{
+            padding-top: 50px;
+            text-align: center;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        article table{
+            margin:20px auto;
+        }
+        article input{
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border:1px solid black;
+        }
+        article select{
+            width: 120px;
+            height: 40px;
+            font-size: 16px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        article textarea{
+            width: 500px;
+            height: 200px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            resize: none;
+            border:1px solid black;
+        }
+        article tr > td:first-child{
+            text-align: right;
+            padding-right: 10px;
+        }
+        article tr > td:last-child{
+            text-align: left;
+        }
+        .table_footer{
+            padding: 0px !important;
+        }
+        td > button{
+            width: 150px;
+            height: 50px;
+            background-color: rgb(26,143,221);
+            color:white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+        }
+        td > button:first-child{
+            float: left;
+        }
+        td > button:last-child{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <nav class="left_menu">
+        <ul>
+            <li><a href="#" title="메인 페이지로 이동"><img src="img/home.png" alt="메인 페이지 아이콘"></a></li>
+            <li><a href="#" title="상품 정보 페이지로 이동"><img src="img/coffee_icon.png" alt="상품 정보 페이지 아이콘"></a></li>
+            <li><a href="#" title="상품 사진 페이지로 이동"><img src="img/paper.png" alt="상품 사진 페이지 아이콘"></a></li>
+            <li><a href="#" title="광고 동영상 페이지로 이동"><img src="img/tv.png" alt="광고 동영상 페이지 아이콘"></a></li>
+            <li><a href="#" title="문의 페이지로 이동"><img src="img/call.png" alt="문의 페이지 아이콘"></a></li>
+        </ul>
+    </nav>
+    <header><img src="img/main.png" alt=""></header>
+    <nav class="main_menu">
+        <ul>
+            <li><a href="#" title="메인 페이지로 이동">HOME</a></li>
+            <li><a href="#" title="상품 정보 페이지로 이동">COFFEE</a></li>
+            <li><a href="#" title="상품 사진 페이지로 이동">CF</a></li>
+            <li><a href="#" title="광고 동영상 페이지로 이동">PRINT</a></li>
+            <li><a href="#" title="문의 페이지로 이동">문의하기</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>제품 문의하기</h2>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><label for="title">제목</label></td>
+                        <td><input type="text" name="title" id="title"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="writer">작성자</label></td>
+                        <td><input type="text" name="writer" id="writer"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">답변받을 이메일</label></td>
+                        <td><input type="text" name="email" id="email">@<select name="" id="">
+                            <option value="1">gmail.com</option>
+                            <option value="2">naver.com</option>
+                            <option value="3">hanmail.net</option>
+                            <option value="4">직접입력</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="content">문의내용</label></td>
+                        <td><textarea id="content" name="content"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="table_footer">
+                            <button>문의하기</button>
+                            <button class="reset">초기화</button>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </article>
+    </section>
+</body>
+</html>
